@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light--Gray: hsl(204, 43%, 93%);
+    --Grayish--Blue: hsl(218, 22%, 67%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: var(--Light--Gray);
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: grid;
+    border-radius: 12px;
+    background-color: white;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "a a""b c";
+    margin: 2rem 1rem;
+    box-shadow: 0px 9px 10px hsl(204, 43%, 73%);
+}
+
+.box {
+    padding: 45px;
+}
+
+.title {
+    grid-area: a;
+}
+
+.left {
+    grid-area: b;
+    background-color: var(--Cyan);
+}
+
+.right {
+    grid-area: c;
+    background-color: hsl(179, 62%, 45%);
+}
+
+h1 {
+    color: var(--Cyan);
+    font-size: 1.625rem;
+    padding-bottom: 23px;
+}
+
+h2 {
+    color: var(--Bright-Yellow);
+    font-size: 20px;
+    padding-bottom: 12px;
+}
+
+.text1 {
+    color: var(--Grayish--Blue);
+    font-size: 17px;
+    line-height: 1.85rem;
+}
+
+h3 {
+    font-size: 18px;
+    color: whitesmoke;
+    padding-bottom: 17px;
+}
+
+p.subs {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+p span.dollar {
+    color: whitesmoke;
+    font-size: 32px;
+    font-weight: 700;
+    padding-right: 10px;
+}
+
+p span {
+    color: hsl(204, 43%, 73%);
+}
+
+p.access {
+    color: var(--Light--Gray);
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+a.button {
+    display: block;
+    text-align: center;
+    background-color: var(--Bright-Yellow);
+    text-decoration: none;
+    color: white;
+    padding: 16px 0;
+    border-radius: 6px;
+    font-size: 17px;
+    box-shadow: 0px 5px 7px hsl(179, 62%, 33%);
+}
+
+.right p {
+    color: whitesmoke;
+    padding-bottom: 17px;
+    font-size: 18px;
+}
+.right ul {
+    list-style: none;
+}
+
+.right li {
+    color: hsl(204, 43%, 83%);
+    padding-bottom: 4px;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 375px){
+    .wrapper {
+        grid-template-columns: 100%;
+        grid-template-areas: "a""b""c";
+    }
+
+    .box {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 19px;
+    }
+    
+    h2 {
+        font-size: 15px;
+    }
+    
+    .text1 {
+        font-size: 14px;
+        line-height: 1.6rem;
+    }
+}
