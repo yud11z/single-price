@@ -63,20 +63,20 @@ h1 {
 
 h2 {
     color: var(--Bright-Yellow);
-    font-size: 20px;
+    font-size: 1.25rem;
     padding-bottom: 12px;
 }
 
 .text1 {
     color: var(--Grayish--Blue);
-    font-size: 17px;
+    font-size: 1.0625rem;
     line-height: 1.85rem;
 }
 
 h3 {
     font-size: 18px;
     color: whitesmoke;
-    padding-bottom: 17px;
+    padding-bottom: 1.0625rem;
 }
 
 p.subs {
@@ -87,7 +87,7 @@ p.subs {
 
 p span.dollar {
     color: whitesmoke;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
     padding-right: 10px;
 }
@@ -98,7 +98,7 @@ p span {
 
 p.access {
     color: var(--Light--Gray);
-    font-size: 16px;
+    font-size: 1rem;
     padding-bottom: 30px;
 }
 
@@ -110,14 +110,14 @@ a.button {
     color: white;
     padding: 16px 0;
     border-radius: 6px;
-    font-size: 17px;
+    font-size: 1.0625rem;
     box-shadow: 0px 5px 7px hsl(179, 62%, 33%);
 }
 
 .right p {
     color: whitesmoke;
     padding-bottom: 17px;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 .right ul {
     list-style: none;
@@ -126,12 +126,13 @@ a.button {
 .right li {
     color: hsl(204, 43%, 83%);
     padding-bottom: 4px;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 200;
 }
 
 .attribution { 
-    font-size: 11px; text-align: center; 
+    font-size: 0.6875rem; 
+    text-align: center; 
 }
 
 .attribution a { 
@@ -149,15 +150,15 @@ a.button {
     }
 
     h1 {
-        font-size: 19px;
+        font-size: 1.1875rem;
     }
     
     h2 {
-        font-size: 15px;
+        font-size: 0.9375rem;
     }
     
     .text1 {
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 1.6rem;
     }
 }
